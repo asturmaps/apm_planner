@@ -133,6 +133,7 @@ private:
     QList<QString> loglines;
     QSqlDatabase m_sharedDb;
     int currentIndex;
+    QPair<QString,QString> getErrText(int subsys,int ecode);
 
     QList<QPair<qint64,double> > m_onlineValueTimeoutList;
 
